@@ -1,0 +1,48 @@
+body{
+    background-color: rgba(174, 255, 121, 0.575);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+        
+#portaFotos {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(24, 199, 33, 0.419);
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+#foto {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    position: center;
+
+
+}
+
+@media screen and (orientation:landscape) {
+    #portaFotos {
+        max-width: 1200px;
+        max-height: 800px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #portaFotos {
+        max-width: 600px;
+        max-height: 900px;
+    }
+}
